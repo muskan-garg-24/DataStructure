@@ -35,7 +35,12 @@ After completing a 60-day GeeksforGeeks streak, I decided to shift my focus from
 
 * Continuous Subarrays
 * Count Subarrays With Cost Less Than or Equal to K
-* More problems coming soon...
+* Shortest Subarray with Sum at Least K
+* Max Value of Equation
+
+#### Circular Queue
+
+* Coming soon...
 
 ## Repository Structure
 
