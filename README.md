@@ -38,9 +38,12 @@ After completing a 60-day GeeksforGeeks streak, I decided to shift my focus from
 * Shortest Subarray with Sum at Least K
 * Max Value of Equation
 
-#### Circular Queue
+### Queue Patterns
 
-* Coming soon...
+#### Parentheses Validation
+
+* valid parentheses
+
 
 ## Repository Structure
 
@@ -59,8 +62,8 @@ DSA-Pattern-Series/
 
 * [x] Basic Queue Simulation
 * [x] Sliding Window + Deque
-* [ ] Monotonic Deque
-* [ ] Remaining Queue Patterns
+* [x] Monotonic Deque
+* [-] Remaining Queue Patterns
 * [ ] Stack Patterns
 * [ ] Linked List
 * [ ] Tree Patterns
