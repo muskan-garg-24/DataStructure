@@ -1,4 +1,4 @@
-package stack.monotonic_increasing;
+package stack.monotonic;
 
 import java.util.*;
 
