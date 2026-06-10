@@ -14,36 +14,9 @@ After completing a 60-day GeeksforGeeks streak, I decided to shift my focus from
 
 ## Patterns Covered
 
-### Queue Patterns
+* Queue Patterns
 
-#### Basic Queue Simulation
-
-* Number of Recent Calls
-* Time Needed to Buy Tickets
-* Implement Queue using Stacks
-* Implement Stack using Queue
-* Design Circular Queue
-
-#### Sliding Window + Deque
-
-* First Negative Integer in Every Window of Size K
-* First Non-Repeating Character in a Stream
-* Longest Continuous Subarray With Absolute Diff ≤ Limit
-* Sliding Window Maximum
-
-#### Monotonic Deque
-
-* Continuous Subarrays
-* Count Subarrays With Cost Less Than or Equal to K
-* Shortest Subarray with Sum at Least K
-* Max Value of Equation
-
-### Queue Patterns
-
-#### Parentheses Validation
-
-* valid parentheses
-
+* Stack Patterns
 
 ## Repository Structure
 
@@ -64,7 +37,7 @@ DSA-Pattern-Series/
 * [x] Sliding Window + Deque
 * [x] Monotonic Deque
 * [-] Remaining Queue Patterns
-* [ ] Stack Patterns
+* [x] Stack Patterns
 * [ ] Linked List
 * [ ] Tree Patterns
 * [ ] Graph Patterns
