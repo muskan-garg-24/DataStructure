@@ -1,4 +1,4 @@
-package linkedList.in_place_reorder;
+package linkedList.in_place_rearrangement;
 
 import java.util.*;
 
