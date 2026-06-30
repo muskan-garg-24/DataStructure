@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class RemoveConsecutiveDuplicate {
 
-    // Recursive function to remove consecutive duplicates
     public static String removeDuplicates(String str) {
 
         // Base Case
