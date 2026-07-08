@@ -2,20 +2,25 @@ package recursion;
 
 import java.util.Scanner;
 
-public class SwapNodesInPairs {
+public class LinkedListDeleteAtPosition {
 
-    public static Node swapPairs(Node head) {
-        if (head == null || head.next == null) {
-            return head;
+    // Recursive function to delete node at given position (1-based indexing)
+    public static Node deleteAtPosition(Node head, int pos) {
+
+        // Base Case: Empty list
+        if (head == null) {
+            return null;
         }
 
-        Node first = head;
-        Node second = head.next;
+        // Base Case: Delete first node
+        if (pos == 1) {
+            return head.next;
+        }
 
-        first.next = swapPairs(second.next);
-        second.next = first;
+        // Recursively delete from the remaining list
+        head.next = deleteAtPosition(head.next, pos - 1);
 
-        return second;
+        return head;
     }
 
     public static Node createList(Scanner sc, int n) {
@@ -54,12 +59,19 @@ public class SwapNodesInPairs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Number of nodes
         int n = sc.nextInt();
 
+        // Create linked list
         Node head = createList(sc, n);
 
-        head = swapPairs(head);
+        // Position to delete (1-based)
+        int pos = sc.nextInt();
 
+        // Delete node recursively
+        head = deleteAtPosition(head, pos);
+
+        // Print updated list
         printList(head);
 
         sc.close();

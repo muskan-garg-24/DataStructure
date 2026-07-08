@@ -2,22 +2,27 @@ package recursion;
 
 import java.util.Scanner;
 
-public class SwapNodesInPairs {
+public class ReverseALinkedList {
 
-    public static Node swapPairs(Node head) {
+    // Recursive function to reverse the linked list
+    public static Node reverseList(Node head) {
+
+        // Base Case: Empty list or single node
         if (head == null || head.next == null) {
             return head;
         }
 
-        Node first = head;
-        Node second = head.next;
+        // Recursively reverse the remaining list
+        Node newHead = reverseList(head.next);
 
-        first.next = swapPairs(second.next);
-        second.next = first;
+        // Reverse the current link
+        head.next.next = head;
+        head.next = null;
 
-        return second;
+        return newHead;
     }
 
+    // Function to create linked list
     public static Node createList(Scanner sc, int n) {
         Node head = null;
         Node tail = null;
@@ -37,6 +42,7 @@ public class SwapNodesInPairs {
         return head;
     }
 
+    // Function to print linked list
     public static void printList(Node head) {
         while (head != null) {
             System.out.print(head.data);
@@ -54,12 +60,16 @@ public class SwapNodesInPairs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Number of nodes
         int n = sc.nextInt();
 
+        // Create linked list
         Node head = createList(sc, n);
 
-        head = swapPairs(head);
+        // Reverse the linked list recursively
+        head = reverseList(head);
 
+        // Print reversed list
         printList(head);
 
         sc.close();

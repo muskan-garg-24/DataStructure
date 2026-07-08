@@ -2,22 +2,30 @@ package recursion;
 
 import java.util.Scanner;
 
-public class SwapNodesInPairs {
+public class InsertionAtAGivenPositionInALinkedList {
 
-    public static Node swapPairs(Node head) {
-        if (head == null || head.next == null) {
-            return head;
+    // Recursive function to insert a node at the given position (1-based indexing)
+    public static Node insertPos(Node head, int pos, int val) {
+
+        // Base Case: Insert at the beginning
+        if (pos == 1) {
+            Node newNode = new Node(val);
+            newNode.next = head;
+            return newNode;
         }
 
-        Node first = head;
-        Node second = head.next;
+        // Base Case: Position is invalid
+        if (head == null) {
+            return null;
+        }
 
-        first.next = swapPairs(second.next);
-        second.next = first;
+        // Recursively move to the desired position
+        head.next = insertPos(head.next, pos - 1, val);
 
-        return second;
+        return head;
     }
 
+    // Function to create linked list
     public static Node createList(Scanner sc, int n) {
         Node head = null;
         Node tail = null;
@@ -37,6 +45,7 @@ public class SwapNodesInPairs {
         return head;
     }
 
+    // Function to print linked list
     public static void printList(Node head) {
         while (head != null) {
             System.out.print(head.data);
@@ -54,12 +63,20 @@ public class SwapNodesInPairs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Number of nodes
         int n = sc.nextInt();
 
+        // Create linked list
         Node head = createList(sc, n);
 
-        head = swapPairs(head);
+        // Position (1-based) and value to insert
+        int pos = sc.nextInt();
+        int val = sc.nextInt();
 
+        // Insert recursively
+        head = insertPos(head, pos, val);
+
+        // Print updated list
         printList(head);
 
         sc.close();
