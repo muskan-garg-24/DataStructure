@@ -1,4 +1,4 @@
-package linkedList.recurssion_in_LL;
+package linkedList.recursion_in_LL;
 
 import java.util.*;
 
