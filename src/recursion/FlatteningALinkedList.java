@@ -2,18 +2,6 @@ package recursion;
 
 import java.util.Scanner;
 
-class ListNode {
-    int data;
-    ListNode next;
-    ListNode bottom;
-
-    ListNode(int data) {
-        this.data = data;
-        next = null;
-        bottom = null;
-    }
-}
-
 public class FlatteningALinkedList {
 
     // Flatten the linked list recursively
@@ -40,7 +28,7 @@ public class FlatteningALinkedList {
 
         ListNode result;
 
-        if (first.data <= second.data) {
+        if (first.val <= second.val) {
 
             result = first;
             result.bottom = merge(first.bottom, second);
@@ -82,7 +70,7 @@ public class FlatteningALinkedList {
 
         while (head != null) {
 
-            System.out.print(head.data);
+            System.out.print(head.val);
 
             if (head.bottom != null) {
                 System.out.print(" ");
@@ -124,4 +112,4 @@ public class FlatteningALinkedList {
 
         sc.close();
     }
-}
+} 

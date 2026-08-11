@@ -2,16 +2,6 @@ package recursion;
 
 import java.util.Scanner;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-}
-
 public class ReverseNodesInKGroup {
 
     // Function to reverse nodes in groups of k
@@ -56,7 +46,6 @@ public class ReverseNodesInKGroup {
         return prev;
     }
 
-    // Function to create linked list
     public static ListNode createList(Scanner sc, int n) {
         ListNode head = null;
         ListNode tail = null;
@@ -76,7 +65,6 @@ public class ReverseNodesInKGroup {
         return head;
     }
 
-    // Function to print linked list
     public static void printList(ListNode head) {
         while (head != null) {
             System.out.print(head.val);

@@ -18,12 +18,21 @@ After completing a 60-day GeeksforGeeks streak, I decided to shift my focus from
 
 * Stack Patterns
 
+* Linked List Patterns
+
+* backtracking
+
+* recursion
+
+* tree Patterns 
+
 ## Repository Structure
 
 ```text
 DSA-Pattern-Series/
 │
-├── Queue/
+├── src
+|   ├── Queue/
 │   ├── Basic Queue Simulation/
 │   ├── Sliding Window + Deque/
 │   └── Monotonic Deque/
@@ -38,7 +47,9 @@ DSA-Pattern-Series/
 * [x] Monotonic Deque
 * [-] Remaining Queue Patterns
 * [x] Stack Patterns
-* [ ] Linked List
+* [x] Linked List
+* [x] Recursion
+* [x] Backtracking
 * [ ] Tree Patterns
 * [ ] Graph Patterns
 * [ ] Dynamic Programming Patterns
