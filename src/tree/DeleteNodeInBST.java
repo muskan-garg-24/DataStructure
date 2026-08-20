@@ -1,16 +1,5 @@
 package tree;
 
-class TreeNode {
-
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-}
-
 public class DeleteNodeInBST {
 
     public static TreeNode deleteNode(TreeNode root, int key) {
