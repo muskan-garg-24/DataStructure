@@ -2,17 +2,6 @@ package tree;
 
 import java.util.*;
 
-class TreeNode {
-
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-}
-
 public class ConstructBinaryTreeFromPreorderAndInorder {
 
     static int preIndex = 0;
